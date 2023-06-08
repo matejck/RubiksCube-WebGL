@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubik Cube selection</title>
+
+    <link rel="stylesheet" href="../common/style.css">
+
+    <link rel="icon" type="image/png" href="RubikCubeIcon.png">
+</head>
+<body>
+    <script>
+        function begin()
+        {
+            var value = document.getElementById("nsize").value;
+            window.location = 'Cube.html?n=' + value;
+        }
+    </script>
+    <center><h1>Rubik Cube size selection</h1></center>
+    <center><p class="text" for="nsize">this will create n×n×n Rubik cube</p></center>
+    <center><label class="text">n: </label><select class="text"  name="nsize" id="nsize">
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    </center>
+    <p></p>
+    <center><button onclick="begin()" type="button" class="button">Play!</button></center>
+</body>
+</html>
